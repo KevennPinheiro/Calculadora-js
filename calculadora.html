@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="calculadora.js"></script>
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="fundo">
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <p id="resultado"></p>
+            <table>
+                <form action="POST">
+                <tr>
+                    <td><input type="button" value="C" onclick="limpar()"></input></td>
+                    <td><input type="button" value="&lt;" onclick="apagar()"></input></td>
+                    <td><input type="button" value="/" onclick="inserir('/')"></input></td>
+                    <td><input type="button" value="X" onclick="inserir('*')"></input></td>
+                    <td><input type="button" value="&radic;" onclick="raiz()"></input></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" onclick="inserir('7')"></input></td>
+                    <td><input type="button" value="8" onclick="inserir('8')"></input></td>
+                    <td><input type="button" value="9" onclick="inserir('9')"></input></td>
+                    <td><input type="button" value="-" onclick="inserir('-')"></input></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" onclick="inserir('4')"></input></td>
+                    <td><input type="button" value="5" onclick="inserir('5')"></input></td>
+                    <td><input type="button" value="6" onclick="inserir('6')"></input></td>
+                    <td><input type="button" value="+" onclick="inserir('+')"></input></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="1" onclick="inserir('1')"></input></td>
+                    <td><input type="button" value="2" onclick="inserir('2')"></input></td>
+                    <td><input type="button" value="3" onclick="inserir('3')"></input></td>
+                    <td><input type="button" value="=" onclick="calcular()"></input></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" value="0" onclick="inserir('0')" style="width: 106px;"></input></td>
+                    <td><input type="button" value="." onclick="inserir('.')"></input></td>
+                    <td><input type="button" value="%" onclick="percent()"></input></td>
+                </tr>
+                </form>
+            </table>
+      
+        </div>
+    </div>
+</body>
+
+</html>
+
